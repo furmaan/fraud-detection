@@ -1,11 +1,11 @@
-# 🛡️ Real-Time Fraud Detection System
+ Real-Time Fraud Detection System
 
 A production-grade, end-to-end fraud detection system using **LightGBM**, **Apache Kafka**, **FastAPI**, and **Streamlit**.  
 Detects fraudulent transactions in **<50ms** latency with a full streaming pipeline.
 
 ---
 
-## 🏗️ Architecture
+ Architecture
 
 ```
 [Transaction Source]
@@ -50,7 +50,7 @@ Detects fraudulent transactions in **<50ms** latency with a full streaming pipel
 
 ---
 
-## 📁 Folder Structure
+Folder Structure
 
 ```
 fraud_detection/
@@ -94,7 +94,7 @@ fraud_detection/
 
 ---
 
-## ⚡ Quick Start (5 minutes)
+Quick Start (5 minutes)
 
 ### Step 1 — Install dependencies
 
@@ -136,9 +136,9 @@ python -m streaming.pipeline --rate 10
 
 You'll see live predictions:
 ```
-✅ OK    | TXN-1718123456-4521 |  $  23.50 | P=0.002 [LOW]  | 4.2ms
-🚨 FRAUD | TXN-1718123457-8834 |  $1847.00 | P=0.934 [HIGH] | 3.8ms
-✅ OK    | TXN-1718123457-2219 |  $   8.99 | P=0.011 [LOW]  | 3.9ms
+OK    | TXN-1718123456-4521 |  $  23.50 | P=0.002 [LOW]  | 4.2ms
+FRAUD | TXN-1718123457-8834 |  $1847.00 | P=0.934 [HIGH] | 3.8ms
+OK    | TXN-1718123457-2219 |  $   8.99 | P=0.011 [LOW]  | 3.9ms
 ```
 
 ### Step 5 — Launch the dashboard
@@ -151,7 +151,7 @@ Open your browser at: **http://localhost:8501**
 
 ---
 
-## 🚀 Production Setup (with Kafka)
+Production Setup (with Kafka)
 
 ### Start infrastructure
 
@@ -194,7 +194,7 @@ streamlit run dashboard/app.py
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### `POST /predict`
 
@@ -245,7 +245,7 @@ Returns recent stored predictions.
 
 ---
 
-## 📊 Model Performance
+ Model Performance
 
 | Metric            | Value  |
 |-------------------|--------|
@@ -272,7 +272,7 @@ FRAUD_THRESHOLD=0.5
 
 ---
 
-## 🧪 Run Notebook (EDA + Evaluation)
+##  Run Notebook (EDA + Evaluation)
 
 ```bash
 pip install jupyter
@@ -281,7 +281,7 @@ jupyter notebook notebooks/eda_and_evaluation.ipynb
 
 ---
 
-## 🌟 Extra Features to Add (Next Steps)
+##  Extra Features to Add (Next Steps)
 
 | Feature              | Description                                      |
 |----------------------|--------------------------------------------------|
@@ -294,7 +294,7 @@ jupyter notebook notebooks/eda_and_evaluation.ipynb
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 Built as a production-grade ML portfolio project.  
 Stack: Python · LightGBM · Kafka · FastAPI · Streamlit · SQLAlchemy · Docker
